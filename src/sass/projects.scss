@@ -1,13 +1,15 @@
 .projects__title{
-    font-size: 2.3em;
+    font-size: 2.4em;
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    line-height: 1.1;
 }
 
 .projects__project{
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     display: block;
     text-decoration: none;
+    color: inherit;
     &:hover{
         .projects__image{
             transform: scale(1.05);
@@ -16,14 +18,15 @@
 }
 
 .projects__image-holder{
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    width: 100%;
+    // width: 100vw;
+    // position: relative;
+    // left: 50%;
+    // right: 50%;
+    // margin-left: -50vw;
+    // margin-right: -50vw;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .projects__image{
@@ -33,7 +36,7 @@
 }
 
 .projects__masthead{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .projects__category{
@@ -43,12 +46,14 @@
 
 .projects__name{
     display: inline;
-    font-size: 1.6em;
+    font-size: 2em;
+    line-height: 1.2;
     margin-right: 5px;
 }
 
 .projects__description{
     display: inline;
     opacity: 0.5;
-    font-size: 1.6em;
+    font-size: 2em;
+    line-height: 1.2;
 }

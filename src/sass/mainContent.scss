@@ -2,7 +2,7 @@
 .main-content{
     .lede{
         font-size: 2.3em;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .body{
@@ -13,29 +13,19 @@
     
     .section-title{
         font-size: 1.1em;
+        line-height: 1.5;
         margin-bottom: 20px;
     }
 
     .list{
         margin-bottom: 40px;
         font-size: 1.1em;
-        // list-style: none;
+        line-height: 1.5;
         li{
             margin-bottom: 15px;
             position: relative;
             margin-left: 20px;
             padding-left: 10px;
-            // &:before{
-            //     content: "";
-            //     display: block;
-            //     position: absolute;
-            //     left: 0;
-            //     top: 7px;
-            //     height: 4px;
-            //     width: 5px;
-            //     background: $black;
-            //     opacity: 0.5;
-            // }
         }
     }
 

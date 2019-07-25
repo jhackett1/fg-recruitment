@@ -1,6 +1,6 @@
 
 .key-facts{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     @supports(display: grid){
         @media screen and(min-width: 300px){
             display: grid;
@@ -12,7 +12,9 @@
 
 .key-facts__fact{
     margin-bottom: 15px;
+    color: $black;
 }
+
 
 .key-facts__label{
     font-size: 0.9em;

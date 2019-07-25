@@ -1,30 +1,38 @@
 .projects__title{
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .projects__project{
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     display: block;
     text-decoration: none;
     &:hover{
-        // Placeholder 
-        filter: brightness(1.1)
+        .projects__image{
+            transform: scale(1.05);
+        }
     }
 }
 
-.projects__image{
-    margin-bottom: 10px;
+.projects__image-holder{
     width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    overflow: hidden;
+    margin-bottom: 15px;
 }
 
-.projects__summary{
+.projects__image{
+    display: block;
+    width: 100%;
+    transition: 0.3s ease-out;
+}
+
+.projects__masthead{
     margin-bottom: 20px;
 }
 
@@ -35,11 +43,12 @@
 
 .projects__name{
     display: inline;
-    font-size: 1.3em;
+    font-size: 1.6em;
+    margin-right: 5px;
 }
 
 .projects__description{
     display: inline;
     opacity: 0.5;
-    font-size: 1.3em;
+    font-size: 1.6em;
 }

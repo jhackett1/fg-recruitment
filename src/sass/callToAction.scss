@@ -1,0 +1,19 @@
+.call-to-action{
+    background: $lightGrey;
+    padding: 40px 0px;
+}
+
+.call-to-action__title{
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.call-to-action__summary{
+    margin-bottom: 30px;
+    p{
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+}

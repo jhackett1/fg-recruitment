@@ -20,7 +20,25 @@ h1, h2, h3, h4, h5, h6, p, li{
     padding-right: 20px;
 }
 
+.button{
+    color: $pink;
+    border: 3px solid $pink;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.button--solid{
+    color: $white;
+    background-color: $pink;
+}
+
 @import 'header';
 @import 'keyFacts';
 @import 'mainContent';
 @import 'projects';
+@import 'callToAction';
+@import 'footer';

@@ -34,7 +34,7 @@ const watchHtml = () => {
 // Compile HTML templates
 const compileHtml = () => {
     return src("./src/*.html")
-        .pipe(nunjucks.compile(yaml.parse(fs.readFileSync("./content.yml", "utf8"))))
+        // .pipe(nunjucks.compile(yaml.parse(fs.readFileSync("./content.yml", "utf8"))))
         .pipe(dest("dist"))
 }
 
@@ -105,20 +105,12 @@ let webpackConfig = {
                 use: ["css-loader"],
               },
             {
-                test: /\.m?js$/,
-                exclude: /(node_modules|bower_components)/,
+                test: /\.(js|jsx)*/,
+                exclude: /(node_modules)/,
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: [
-                            ["env", 
-                              {
-                                targets: {
-                                  browsers: ["last 2 Chrome versions"]
-                                }
-                              }
-                            ]
-                        ]
+                        presets: ["@babel/preset-env", "@babel/preset-react"],
                     }
                 }
             }

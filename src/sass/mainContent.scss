@@ -1,0 +1,40 @@
+
+.main-content{
+    .lede{
+        font-size: 1.8em;
+        margin-bottom: 40px;
+    }
+
+    .body{
+        font-size: 1.1em;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    .section-title{
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+    .list{
+        margin-bottom: 40px;
+        font-size: 1.1em;
+        list-style: none;
+
+        li{
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 23px;
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 7px;
+                height: 4px;
+                width: 5px;
+                background: $black;
+            }
+
+        }
+    }
+
+}

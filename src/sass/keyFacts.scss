@@ -1,0 +1,25 @@
+
+.key-facts{
+    margin-bottom: 30px;
+    @supports(display: grid){
+        @media screen and(min-width: 300px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 30px;
+        }
+    }
+}
+
+.key-facts__fact{
+    margin-bottom: 15px;
+}
+
+.key-facts__label{
+    font-size: 0.9em;
+    color: transparentize($black, 0.5);
+    margin-bottom: 5px;
+}
+
+.key-facts__value{
+    font-size: 1.25em;
+}

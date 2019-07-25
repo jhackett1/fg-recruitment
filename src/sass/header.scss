@@ -1,0 +1,34 @@
+
+.site-header{
+    height: 40vh;
+    background: $lightGrey;
+    background-image: url("/hero.jpg");
+    background-size: cover;
+    background-position: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 120px;
+}
+
+.site-header__box{
+    background: $pink;
+    padding: 20px;
+    transform: translateY(80px);
+    border-radius: 2px;
+    @media screen and(min-width: 300px){
+        max-width: 85%;
+    }
+}
+
+.site-header__logo{
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.site-header__job{
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 1.1;
+    color: $white;
+}
